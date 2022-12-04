@@ -27,7 +27,7 @@ int main(int argc,char* argv[])
 	if (argc > 1)
 		imageInput = imread(argv[1]);
 	else
-		imageInput = imread("C:/Users/Admin/source/repos/opencv_project_working/opencv_project_working/qrcode-learnopencv.jpg");
+		imageInput = imread("QR_code.jpg");
 	QRCodeDetector qrDecoder = QRCodeDetector::QRCodeDetector();
 	Mat bbox, rectifiedImage;
 	string data = qrDecoder.detectAndDecode(imageInput, bbox, rectifiedImage);
